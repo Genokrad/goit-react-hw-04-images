@@ -19,7 +19,7 @@ export const Modal = ({ modalClose, targetImg }) => {
   };
 
   const BackdropClose = event => {
-    if (event.target === event.currentTarget) {
+    if (event.target.nodeName !== 'IMG') {
       modalClose();
     }
   };
