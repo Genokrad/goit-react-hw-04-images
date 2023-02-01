@@ -13,7 +13,7 @@ export const Modal = ({ modalClose, targetImg }) => {
   });
 
   const closeModal = event => {
-    if (event.code === 'Escape' || event.target.nodeName !== 'IMG') {
+    if (event.code === 'Escape') {
       modalClose();
     }
   };
